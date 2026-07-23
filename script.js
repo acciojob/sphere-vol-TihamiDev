@@ -3,6 +3,7 @@ const volume = document.getElementById("volume");
 
 
 function volume_sphere() {
+	event.preventDefault();
     //Write your code here
 	let r = Number(radius.value);
 	if (r < 0 || isNaN(r)) {
@@ -14,4 +15,5 @@ function volume_sphere() {
   
 } 
 
-window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+// window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
+document.getElementById("MyForm").onsubmit = volume_sphere;
