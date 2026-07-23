@@ -12,7 +12,6 @@ function volume_sphere() {
 		let result = 4 / 3 * Math.PI * Math.pow(r, 3);
 		volume.value = result.toFixed(4);
 	}
-  
 } 
 
 window.onload = document.getElementById('MyForm').onsubmit = volume_sphere;
